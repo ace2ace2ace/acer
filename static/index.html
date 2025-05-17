@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Story Generator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="">
+        <h1>AI Story Generator</h1>
+        <div class="story-form">
+            <div class="form-group">
+                <label for="format">Format:</label>
+                <select id="format">
+                    <option value="Social issues">Debates</option>
+                    <option value="Speech">High School Speech</option>
+                    <option value="Letter">Letter to the editor</option>
+                    <option value="Personal story">Personal story</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="topic">Topic:</label>
+                <input type="text" id="setting" placeholder="e.g., Summary">
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="length">Number of paragraph:</label>
+                <select id="length">
+                    <option value="one paragraph">1</option>
+                    <option value="three paragraph">3</option>
+                    <option value="five paragraph">5</option>
+                </select>
+            </div>
+
+            <button onclick="generateStory()">Generate Story</button>
+        </div>
+
+        <div class="story-output">
+            <h2>Your Story</h2>
+            <div id="story-text">
+                <p class="placeholder">Your generated story will appear here...</p>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
